@@ -13,6 +13,7 @@
 		D13C5E0926ABCCD9007B418C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13C5E0726ABCCD9007B418C /* Main.storyboard */; };
 		D13C5E0B26ABCCDB007B418C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13C5E0A26ABCCDB007B418C /* Assets.xcassets */; };
 		D13C5E0E26ABCCDB007B418C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13C5E0C26ABCCDB007B418C /* LaunchScreen.storyboard */; };
+		D190191F26ABFA6300DFE90E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190191E26ABFA6300DFE90E /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D13C5E0A26ABCCDB007B418C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D13C5E0D26ABCCDB007B418C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D13C5E0F26ABCCDB007B418C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D190191E26ABFA6300DFE90E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		E2F8D0F10F0DC43145660788 /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		D190191926ABF00D00DFE90E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D190191E26ABFA6300DFE90E /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D190191F26ABFA6300DFE90E /* Memo.swift in Sources */,
 				D13C5E0226ABCCD9007B418C /* AppDelegate.swift in Sources */,
 				D13C5E0426ABCCD9007B418C /* SceneDelegate.swift in Sources */,
 			);
