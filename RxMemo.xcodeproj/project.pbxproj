@@ -14,6 +14,9 @@
 		D13C5E0B26ABCCDB007B418C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13C5E0A26ABCCDB007B418C /* Assets.xcassets */; };
 		D13C5E0E26ABCCDB007B418C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13C5E0C26ABCCDB007B418C /* LaunchScreen.storyboard */; };
 		D190191F26ABFA6300DFE90E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190191E26ABFA6300DFE90E /* Memo.swift */; };
+		D190192126ABFB8A00DFE90E /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190192026ABFB8A00DFE90E /* MemoStorageType.swift */; };
+		D190192626AC01FB00DFE90E /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D190192426AC01FB00DFE90E /* RxMemo.xcdatamodeld */; };
+		D190192826AC021C00DFE90E /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190192726AC021C00DFE90E /* MemoryStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		D13C5E0D26ABCCDB007B418C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D13C5E0F26ABCCDB007B418C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D190191E26ABFA6300DFE90E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		D190192026ABFB8A00DFE90E /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		D190192526AC01FB00DFE90E /* RxMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo.xcdatamodel; sourceTree = "<group>"; };
+		D190192726AC021C00DFE90E /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		E2F8D0F10F0DC43145660788 /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +126,9 @@
 		D190191C26ABF05400DFE90E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				D190192326AC01CF00DFE90E /* CoreDataStorage */,
+				D190192226AC01BA00DFE90E /* MemoryStorage */,
+				D190192026ABFB8A00DFE90E /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -129,6 +138,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		D190192226AC01BA00DFE90E /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				D190192726AC021C00DFE90E /* MemoryStorage.swift */,
+			);
+			path = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		D190192326AC01CF00DFE90E /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				D190192426AC01FB00DFE90E /* RxMemo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D190192826AC021C00DFE90E /* MemoryStorage.swift in Sources */,
+				D190192626AC01FB00DFE90E /* RxMemo.xcdatamodeld in Sources */,
 				D190191F26ABFA6300DFE90E /* Memo.swift in Sources */,
+				D190192126ABFB8A00DFE90E /* MemoStorageType.swift in Sources */,
 				D13C5E0226ABCCD9007B418C /* AppDelegate.swift in Sources */,
 				D13C5E0426ABCCD9007B418C /* SceneDelegate.swift in Sources */,
 			);
@@ -451,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D190192426AC01FB00DFE90E /* RxMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D190192526AC01FB00DFE90E /* RxMemo.xcdatamodel */,
+			);
+			currentVersion = D190192526AC01FB00DFE90E /* RxMemo.xcdatamodel */;
+			path = RxMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D13C5DF626ABCCD9007B418C /* Project object */;
 }
