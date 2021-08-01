@@ -47,10 +47,47 @@
                     <view key="view" contentMode="scaleToFill" id="Rtl-25-Ju2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-Ik-qHM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="yu4-B7-OLg" style="IBUITableViewCellStyleDefault" id="qmc-Ji-vRk">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qmc-Ji-vRk" id="f1y-DN-Wpi">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yu4-B7-OLg">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zUH-SQ-mUA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aK7-Ik-qHM" firstAttribute="leading" secondItem="zUH-SQ-mUA" secondAttribute="leading" id="8TR-os-r15"/>
+                            <constraint firstAttribute="bottom" secondItem="aK7-Ik-qHM" secondAttribute="bottom" id="Lj7-qr-L44"/>
+                            <constraint firstItem="aK7-Ik-qHM" firstAttribute="trailing" secondItem="zUH-SQ-mUA" secondAttribute="trailing" id="RRT-jH-Fcv"/>
+                            <constraint firstItem="aK7-Ik-qHM" firstAttribute="top" secondItem="Rtl-25-Ju2" secondAttribute="top" id="hzQ-GZ-e8X"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 목록" id="PDw-XD-G7T"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="PDw-XD-G7T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2hi-jd-82h"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="2hi-jd-82h" id="1wa-l7-J1y"/>
+                        <outlet property="listTableView" destination="aK7-Ik-qHM" id="gc9-QF-ZK1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W35-2T-GQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
